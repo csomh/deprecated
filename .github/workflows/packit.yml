@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: csomh/packit-action@v0.1
+      - uses: csomh/packit-action@main
+        with:
+          who-to-greet: ${{ secrets.WHO }}
