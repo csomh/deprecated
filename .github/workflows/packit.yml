@@ -8,3 +8,6 @@ jobs:
       - uses: csomh/packit-action@main
         with:
           who-to-greet: ${{ secrets.WHO }}
+      - shell: bash
+        run: |
+          ls *.srpm
