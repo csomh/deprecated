@@ -1,0 +1,8 @@
+name: Build with Packit
+on: push
+jobs:
+  build-with-packit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: csomh/packit-action@v0.0
